@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>AvidBikers</title>
+</head>
+
+<body class="bg">
+  <div class="app">
+    <div class="header">
+      <nav class="navbar fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html" class="navbar-item">
+              <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2C16.5685 2 30 15.4315 30 32V33H20C8.9543 33 0 24.0457 0 13V2Z" fill="black" fill-opacity="0.29" />
+                <path d="M13 0C25.1503 0 35 9.84974 35 22V29H33C21.9543 29 13 20.0457 13 9V0Z" fill="black"
+                  fill-opacity="0.29" />
+                <path d="M5 0C21.5685 0 35 13.4315 35 30V31H25C13.9543 31 5 22.0457 5 11V0Z" fill="black" fill-opacity="0.29" />
+              </svg>
+
+              <span>AvidBikers</span>
+            </a>
+            <a class="navbar-burger burger" role="button" aria-label="menu" data-target="navMenu" aria-expanded="false">
+              <span>&#8801;</span>
+            </a>
+          </div>
+          <div class="nav-menu" id="navMenu">
+            <div class="navbar-left">
+              <a href="index.html" class="navbar-item is-active">Home</a>
+              <a href="#" class="navbar-item">New</a>
+              <a href="#" class="navbar-item">Used</a>
+              <a href="#" class="navbar-item">Sell Your Bicycle</a>
+              <a href="#" class="navbar-item">How It Works</a>
+            </div>
+            <div class="navbar-right">
+              <a href="#" class="button button-inset button-rounded">
+                Sign Up
+              </a>
+              <a href="#" class="button button-default button-rounded ml-10">Log In</a>
+              <a href="#" class="navbar-item shopping-cart">&#128722;<sup class="sup">8</sup></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <!--end header-->
+    <section>
+      <div class="container">
+        <div class="details">
+          <div class="columns">
+            <div class="col-2">
+              <div class="">
+                <div class="bike-preview">
+                  <img src="./images/BigEasy_BK3781.jpg" class="" alt="bicycle" />
+                </div>
+                <div class="bike-preview">
+                  <img src="./images/sun.jpeg" class="" alt="bicycle" />
+                </div>
+                <div class="bike-preview">
+                  <img src="./images/BigEasy_BK3781.jpg" class="" alt="bicycle" />
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="bike-view">
+                <img src="./images/BigEasy_BK3781.jpg" class="" alt="bicycle" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div>
+                <button class="button button-sm button-green">InStock</button>
+                <h1 class="mt-10">TREK Magic Bike</h1>
+                <span class="details-review-count">Reviews(46)</span>
+
+                <div class="flex-start align-center mt-10">
+                  <div>Bike Color</div>:
+                  <div>
+                    <div class="flex-start ml-10">
+                      <div>
+                        <input type="radio" name="demo" value="one" id="radio-one" class="form-radio" checked><label
+                          for="radio-one"></label>
+                      </div>
+                      <div>
+                        <input type="radio" name="demo" value="one" id="radio-one" class="form-radio bg-red"><label for="radio-one"></label>
+                      </div>
+                      <div>
+                        <input type="radio" name="demo" value="one" id="radio-one" class="form-radio bg-green"><label
+                          for="radio-one"></label>
+                      </div>
+                      <div>
+                        <input type="radio" name="demo" value="one" id="radio-one" class="form-radio bg-black"><label
+                          for="radio-one"></label>
+                      </div>
+                      <div>
+                        <input type="radio" name="demo" value="one" id="radio-one" class="form-radio bg-yellow"><label
+                          for="radio-one"></label>
+                      </div>
+                      <div>
+                        <input type="radio" name="demo" value="one" id="radio-one" class="form-radio bg-blue"><label
+                          for="radio-one"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-start mt-10 align-center">
+                  <div>Quantity</div>:
+                  <div class="quantity-meter">
+                    <div class="quantity-operator ml-10">+</div>
+                    <div class="quantity-value">1</div>
+                    <div class="quantity-operator mr-10">-</div>
+                  </div>
+                </div>
+                <div class="flex-start mt-10">
+                  <span>Price</span>:
+                  <span class="ml-10">$7,000</span>
+                </div>
+                <div class="flex-start mt-20">
+                  <button class="button button-xsm button-black button-rounded flex-start align-center">
+                    <span class="svg-span">
+                      <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                    </span>
+                    <span class="span-text">Add to cart</span>
+                  </button>
+                  <button class="button button-xsm button-default button-rounded ml-10 flex-start align-center">
+                    <span class="svg-span">
+                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="19" height="17" fill="url(#pattern0)" />
+                        <defs>
+                          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0" transform="translate(0.0526316) scale(0.00699013 0.0078125)" />
+                          </pattern>
+                          <image id="image0" width="128" height="128" xlink:href="data:image/png;base64,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" />
+                        </defs>
+                      </svg>
+
+                    </span>
+                    <span class="span-text">Save for next time</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="columns">
+              <div class="col-3">
+                <div class="footer-desc">
+                  <a class="footer-logo">AvidBikers</a>
+                  <p class="f-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odit assumenda
+                    obcaecati cum vitae
+                    rerum natus repudiandae id earum alias error perferendis, ipsum enim? Dicta.</p>
+                </div>
+              </div>
+              <div class="col-3"></div>
+              <div class="col-2">
+                <div class="footer-list">
+                  <h1>Navigation</h1>
+                  <ul>
+                    <li class="footer-list-items"><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Brands</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="footer-list">
+                  <h1>Links</h1>
+                  <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="footer-list">
+                  <h1>Account</h1>
+                  <ul>
+                    <li><a href="#">Favorite(0)</a></li>
+                    <li><a href="#">Cart(0)</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container is-fluid">
+          <div class="columns">
+            <div class="col-4">
+              <div class="footer-link">
+                <a href="#">AvidBikers 2008-2019</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="footer-items flex-start align-center">
+                <a class="" href="#">About Us</a>
+                <a class="ml-10" href="#">Privacy & Terms</a>
+                <a class="ml-10" href="#">Facebook</a>
+                <a class="ml-10" href="#">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--end app-->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
