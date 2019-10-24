@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,23 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>AvidBikers</title>
 </head>
-<body>
+
+<body class="bg">
   <div class="app">
     <div class="header">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
+      <nav class="navbar fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="logo">
-            <a href="index.html" class="navbar-item">AvidBikers</a>
+            <a href="index.html" class="navbar-item">
+              <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2C16.5685 2 30 15.4315 30 32V33H20C8.9543 33 0 24.0457 0 13V2Z" fill="black" fill-opacity="0.29" />
+                <path d="M13 0C25.1503 0 35 9.84974 35 22V29H33C21.9543 29 13 20.0457 13 9V0Z" fill="black"
+                  fill-opacity="0.29" />
+                <path d="M5 0C21.5685 0 35 13.4315 35 30V31H25C13.9543 31 5 22.0457 5 11V0Z" fill="black" fill-opacity="0.29" />
+              </svg>
+
+              <span>AvidBikers</span>
+            </a>
             <a class="navbar-burger burger" role="button" aria-label="menu" data-target="navMenu" aria-expanded="false">
               <span>&#8801;</span>
             </a>
@@ -23,26 +34,29 @@
           <div class="nav-menu" id="navMenu">
             <div class="navbar-left">
               <a href="index.html" class="navbar-item is-active">Home</a>
-              <a href="#" class="navbar-item">How it works</a>
               <a href="#" class="navbar-item">New</a>
+              <a href="#" class="navbar-item">Used</a>
+              <a href="#" class="navbar-item">Sell Your Bicycle</a>
+              <a href="#" class="navbar-item">How It Works</a>
             </div>
             <div class="navbar-right">
-              <a href="#" class="button button-outline">
+              <a href="#" class="button button-inset button-rounded">
                 Sign Up
               </a>
               <a href="#" class="button button-black ml-10">Log In</a>
-              <a href="#" class="navbar-item shopping-cart">&#128722;</a>
+              <a href="#" class="navbar-item shopping-cart">&#128722;<sup class="sup">8</sup></a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="container is-fluid">
+      <div class="container">
         <div class="banner">
           <div class="columns">
             <div class="col-6">
               <div class="mt-40">
                 <h1 class="title h2">Search For Bicycles</h1>
-                <p class="subtitle h4">Find eco-friendly bicycle and save the planet while improving your fitness and health</p>
+                <p class="subtitle h4">Find eco-friendly bicycle and save the planet while improving your fitness and
+                  health</p>
                 <div class="search flex-start">
                   <input class="form-control border-less" type="text" placeholder="Make &#8609; Model &#8609; Status">
                   <button class="button button-black button-rectangle">Search &#8594;</button>
@@ -57,9 +71,10 @@
           </div>
         </div>
       </div>
-    </div><!--end header-->
+    </div>
+    <!--end header-->
     <section class="py-40">
-      <div class="container is-fluid">
+      <div class="container">
         <h1 class="h2 text-center pb-40">How it works</h1>
         <div class="columns">
           <div class="col-4">
@@ -84,7 +99,7 @@
       </div>
     </section>
     <section class="py-40">
-      <div class="container is-fluid">
+      <div class="container">
         <h1 class="h2 title py-40">Latest Bicycle Offers</h1>
         <div class="flex-start">
           <button class="button button-black button-rounded">New</button>
@@ -96,61 +111,90 @@
               <div class="card-image">
                 <img class="" src="./images/BigEasy_BK3781.jpg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">EasyRide 2018</div>
                 <div class="subtitle h7 py-10">Posted by: Lucky</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
           <div class="col-3">
             <div class="card">
               <div class="card-image">
                 <img class="" src="./images/special.jpeg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Special 2019</div>
                 <div class="subtitle h7 py-10">Posted by: Oscar Japhet</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
           <div class="col-3">
             <div class="card">
               <div class="card-image">
                 <img class="" src="./images/trek2.jpeg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Trek Domane 2019</div>
                 <div class="subtitle h7 py-10">Posted by: Gigu Gideon</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
           <div class="col-3">
             <div class="card">
               <div class="card-image">
                 <img class="" src="./images/troll.jpg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Troll 2015</div>
                 <div class="subtitle h7 py-10">Posted by: Precious</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
         </div>
         <div class="columns">
           <div class="col-3">
@@ -158,66 +202,94 @@
               <div class="card-image">
                 <img class="" src="./images/universal.jpeg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Special 2017</div>
                 <div class="subtitle h7 py-10">Posted by: Obi Chinyere</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
           <div class="col-3">
             <div class="card">
               <div class="card-image">
                 <img class="" src="./images/sun.jpeg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Vitesse 2019</div>
                 <div class="subtitle h7 py-10">Posted by: Ajima</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
           <div class="col-3">
             <div class="card">
               <div class="card-image">
                 <img class="" src="./images/straggler.jpg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Straggler 2018</div>
                 <div class="subtitle h7 py-10">Posted by: Priscilla</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
           <div class="col-3">
             <div class="card">
               <div class="card-image">
                 <img class="" src="./images/state.jpeg" alt="">
               </div>
-              <div class="pd-10">
+              <div class="pd-20">
                 <div class="card-title">Vitesse 2019</div>
                 <div class="subtitle h7 py-10">Posted by: Sullivan Wisdom</div>
                 <div class="space-between card-reaction">
-                  <button class="button button-outline">More Details...</button>
-                  <div class="card-span pt-5">&#128155;</div>
+                  <button class="button button-sm button-inset button-rounded">More Details</button>
+                  <div class="card-span">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.6154 0H14.5673C12.6587 0 10.9712 1.05 10 2.6C9.02885 1.05 7.34135 0 5.43269 0H5.38462C2.40865 0.03 0 2.545 0 5.65C0 7.5 0.778846 10.125 2.29808 12.285C5.19231 16.4 10 20 10 20C10 20 14.8077 16.4 17.7019 12.285C19.2212 10.125 20 7.5 20 5.65C20 2.545 17.5913 0.03 14.6154 0ZM16.6154 11.46C14.5673 14.375 11.4471 17.065 10 18.24C8.55289 17.065 5.43269 14.37 3.38462 11.455C1.97596 9.455 1.34615 7.1 1.34615 5.65C1.34615 4.52 1.76923 3.46 2.52885 2.66C3.29327 1.86 4.30769 1.415 5.39423 1.405H5.4375C6.125 1.405 6.80769 1.59 7.41346 1.945C8 2.29 8.50962 2.78 8.875 3.37C9.125 3.765 9.54808 4.005 10.0048 4.005C10.4615 4.005 10.8846 3.765 11.1346 3.37C11.5048 2.78 12.0096 2.29 12.5962 1.945C13.2019 1.59 13.8846 1.405 14.5721 1.405H14.6154C15.6971 1.415 16.7163 1.86 17.4808 2.66C18.2452 3.46 18.6635 4.525 18.6635 5.65C18.6538 7.1 18.024 9.455 16.6154 11.46Z"
+                        fill="black" />
+                    </svg>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div> <!--end col-3-->
+          </div>
+          <!--end col-3-->
         </div>
       </div>
     </section>
     <section class="py-40">
-      <div class="container is-fluid">
+      <div class="container">
         <div class="columns">
           <div class="col-6">
             <div class="featured">
@@ -239,7 +311,7 @@
       </div>
     </section>
     <section class="py-40">
-      <div class="container is-fluid">
+      <div class="container">
         <h1 class="h3 text-center py-40">Testimony from our customers</h1>
         <div class="columns">
           <div class="col-3"></div>
@@ -248,19 +320,19 @@
               <div class="absolute arrow">&#8594;</div>
               <div class="columns">
                 <div class="col-5">
-                    <div class="testimony-card__image">
-                      <img src="./images/active.jpg" alt="">
-                    </div>
+                  <div class="testimony-card__image">
+                    <img src="./images/active.jpg" alt="">
+                  </div>
                 </div>
                 <div class="col-7">
                   <div class="testimony-card__text">
-                    <p class="fw-100">"Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p class="fw-100">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Dignissimos cupiditate error fugit ipsa a velit vitae reiciendis sequi consectetur nostrum."
                     </p>
                     <span>Obi Chinyere</span>
                   </div>
                 </div>
-               </div>
+              </div>
             </div>
           </div>
           <div class="col-3"></div>
@@ -268,11 +340,60 @@
       </div>
     </section>
     <section>
+
       <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="columns">
+              <div class="col-3">
+                <div class="footer-desc">
+                  <a class="footer-logo">AvidBikers</a>
+                  <p class="f-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus odit assumenda
+                    obcaecati cum vitae
+                    rerum natus repudiandae id earum alias error perferendis, ipsum enim? Dicta.</p>
+                </div>
+              </div>
+              <div class="col-3"></div>
+              <div class="col-2">
+                <div class="footer-list">
+                  <h1>Navigation</h1>
+                  <ul>
+                    <li class="footer-list-items"><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Brands</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="footer-list">
+                  <h1>Links</h1>
+                  <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="footer-list">
+                  <h1>Account</h1>
+                  <ul>
+                    <li><a href="#">Favorite(0)</a></li>
+                    <li><a href="#">Cart(0)</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container is-fluid">
           <div class="columns">
             <div class="col-4">
-              <div class="footer-logo">
+              <div class="footer-link">
                 <a href="#">AvidBikers 2008-2019</a>
               </div>
             </div>
@@ -288,7 +409,9 @@
         </div>
       </div>
     </section>
-  </div><!--end app-->
+  </div>
+  <!--end app-->
   <script src="./js/main.js"></script>
 </body>
+
 </html>
