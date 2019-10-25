@@ -11,23 +11,32 @@ const toggleMenu = () => {
 
 toggleMenu();
 
-function onTabClick(event) {
-  let activeTabs = document.querySelectorAll('.activeTab');
+// modal
+const modals = document.querySelectorAll('.modal');
+const buttons = document.querySelectorAll('.button-click');
+const cancelButtons = document.querySelectorAll('.close-modal');
 
-  // deactivate existing active tab and panel
-  // for( let i = 0; i < activeTabs.length; i++) {
-  //   activeTabs[i].className = activeTabs[i].className.replace('active', '');
-  // }
-
-  activeTabs.forEach(function (tab) {
-    tab.className = tab.className.replace('activeTab', '');
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = [...modals].find(modal => modal.dataset.id === button.dataset.target)
+    modal.style.display = 'block';
   });
+});
 
-  // activate new tab and panel
-  event.target.parentElement.className += ' activeTab';
-  document.getElementById(event.target.href.split('#')[1]).className += ' activeTab';
-}
-
-const element = document.getElementById('nav-tab');
-
-element.addEventListener('click', onTabClick, false);
+cancelButtons.forEach(cancelButton => {
+  cancelButton.addEventListener('click', () => {
+    modals.forEach(modal => {
+      modal.style.display = 'none';
+    });
+  })
+})
+// dismiss modal when the window is clicked
+document.addEventListener('click', e => {
+  modals.forEach(modal => {
+    if (modal.style.display === 'block') {
+      if (e.target.className === 'modal') {
+        modal.style.display = 'none';
+      }
+    }
+  });
+})
