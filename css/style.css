@@ -553,6 +553,9 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom {
 .fw-100 {
   font-weight: 100;
 }
+.fw-600 {
+  font-weight: 600;
+}
 
 /* featured and benefits*/
 .featured {
@@ -591,6 +594,12 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom {
 .border-less {
   border: none;
 }
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /*utilities*/
 .mt-5 {
   margin-top: 5px;
@@ -601,11 +610,17 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom {
 .mt-20 {
   margin-top: 20px;
 }
+.mt-30 {
+  margin-top: 30px;
+}
 .mt-40 {
   margin-top: 40px;
 }
 .ml-10 {
   margin-left: 10px;
+}
+.ml-20 {
+  margin-left: 20px;
 }
 .mr-10 {
   margin-right: 10px;
@@ -657,7 +672,7 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom {
 /*details*/
 .details {
 
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .bike-preview img {
   width: 100%;
@@ -729,20 +744,19 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom {
 } */
 label
 {
-  
-     color: #333;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     cursor: pointer;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
 } 
 .quantity-meter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 120px;
   height: 40px;
-  margin-left: 10px;
   border: 1px solid #222;
+  cursor: pointer;
 }
 .quantity-operator {
   display: flex;
@@ -754,4 +768,59 @@ label
 }
 .quantity-value {
   display: flex;
+}
+
+.tabs-list {
+  list-style: none;
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+}
+.tabs-list li {
+  display: inline-block;
+}
+.tabs-list > li a {
+   text-decoration: none;
+    color: #222;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.tabs-list > li a:hover {
+  color: #333;
+}
+
+.tabs-list .activeTab a { 
+  color: #444; 
+  border-bottom: 2px solid #444;
+  
+}
+.tabs-list .activeTab a:hover {
+  border-color: transparent;
+  background: rgba(238, 238, 238, 0.329);
+  color: #777;
+}
+.tab-pane { 
+  display: none;
+}
+
+.tab-pane.activeTab { 
+  display: block; 
+}
+
+/*comment tabs*/
+.comment-box {
+  margin-top: 20px;
+}
+.ratings-outcome {
+  display: block;
+  margin-top: -10px;
+  font-size: 14px;
+}
+.commenter-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.comment-body {
+  font-size: 13px;
+  margin: 0;
 }
