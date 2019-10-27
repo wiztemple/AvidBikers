@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Antic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 :root {
   --app-bg-color: #fff;
   --app-link-color: #2762f7;
@@ -50,7 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
   /* font-family: 'Noto Sans HK', sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Antic', sans-serif; */
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
@@ -68,9 +72,9 @@ body {
 .is-fluid {
   padding: 0 0.9375rem 0 0.9375rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
   .container.is-fluid {
     margin-left: 32px;
@@ -188,7 +192,7 @@ body {
 }
 .logo {
   display: flex;
-  font-family: 'Lobster', cursive;
+  /* font-family: 'Lobster', cursive; */
   align-items: stretch;
   flex-shrink: 0;
   min-height: 4.063rem;
